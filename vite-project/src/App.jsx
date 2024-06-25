@@ -1,9 +1,12 @@
+import Sam from "./Sam";
 
 function App() {
-
   return (
-   <h2>Hello World2</h2>
-  )
+    <>
+      <Sam />
+      <h2>Chai aur code</h2>
+    </>
+  );
 }
 
-export default App
+export default App;
