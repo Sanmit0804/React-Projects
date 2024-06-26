@@ -9,7 +9,6 @@ function Profile() {
   return (
     <>
     <div>Welcome {user.username}</div>
-    <div>Your Password is : {user.password}</div>
     </>
   )
 }
