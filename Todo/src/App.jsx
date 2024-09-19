@@ -1,8 +1,13 @@
 import { useState } from 'react'
-import ToDoList from './ToDoList';
+import ToDoList from './components/ToDoList'
+import ToDoInput from './components/ToDoInput'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [toDoList, setToDoList] = useState([]);
+
+  let addList = (inputText) =>{
+    setToDoList([...toDoList, inputText]);
+  }
 
   return (
     <>

@@ -1,12 +1,15 @@
-import CheckBox from "./components/CheckBox"
+import CheckBox from "./components/CheckBox/CheckBox";
+import Quiz from "./components/Quiz/Quiz";
 
 function App() {
   return (
     <>
       <h2>Welcome to React!</h2>
-      <CheckBox/>
+      <hr />
+      {/* <CheckBox/>  */}
+      <Quiz/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
