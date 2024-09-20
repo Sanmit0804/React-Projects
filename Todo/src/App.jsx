@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import ToDoList from './components/ToDoList'
-import ToDoInput from './components/ToDoInput'
 
 function App() {
   const [toDoList, setToDoList] = useState([]);
