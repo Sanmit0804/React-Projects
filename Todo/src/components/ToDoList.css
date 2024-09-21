@@ -88,7 +88,7 @@
   }
   
   /* Task action buttons */
-  .todo-delete-button, .todo-move-up-button, .todo-move-down-button {
+  .todo-delete-button, .todo-move-up-button, .todo-move-down-button, .todo-done-button {
     background: none;
     border: none;
     cursor: pointer;
@@ -103,5 +103,10 @@
   
   .todo-move-up-button:hover, .todo-move-down-button:hover {
     color: #007bff;
+  }
+  
+  .todo-task-completed {
+    text-decoration: line-through;
+    color: grey;
   }
   
