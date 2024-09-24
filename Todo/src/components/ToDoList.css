@@ -1,112 +1,115 @@
 /* Overall container */
 .todo-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f4f4f9;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Header */
-  .todo-header {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Input container */
-  .todo-input-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  /* Input field */
-  .todo-input {
-    width: 75%;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-    transition: border-color 0.3s ease;
-  }
-  
-  .todo-input:focus {
-    border-color: #007bff;
-  }
-  
-  /* Add button */
-  .todo-add-button {
-    width: 20%;
-    background-color: #007bff;
-    color: white;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .todo-add-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Task list styling */
-  .todo-task-list ol {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .todo-task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  /* Task text */
-  .todo-task-item span {
-    flex-grow: 1;
-    font-size: 1.1em;
-    color: #333;
-    text-align: left;
-  }
-  
-  /* Task buttons container */
-  .todo-task-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  /* Task action buttons */
-  .todo-delete-button, .todo-move-up-button, .todo-move-down-button, .todo-done-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-  }
-  
-  /* Button hover effects */
-  .todo-delete-button:hover {
-    color: #dc3545;
-  }
-  
-  .todo-move-up-button:hover, .todo-move-down-button:hover {
-    color: #007bff;
-  }
-  
-  .todo-task-completed {
-    text-decoration: line-through;
-    color: grey;
-  }
-  
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* Header */
+.todo-header {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input container */
+.todo-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.todo-input {
+  width: 75%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+  border-color: #007bff;
+}
+
+/* Add button */
+.todo-add-button {
+  width: 20%;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Task list styling */
+.todo-task-list ol {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Task text */
+.todo-task-item span {
+  flex-grow: 1;
+  font-size: 1.1em;
+  color: #333;
+  text-align: left;
+}
+
+/* Task buttons container */
+.todo-task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Task action buttons */
+.todo-delete-button,
+.todo-move-up-button,
+.todo-move-down-button,
+.todo-done-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+/* Button hover effects */
+.todo-delete-button:hover {
+  color: #dc3545;
+}
+
+.todo-move-up-button:hover,
+.todo-move-down-button:hover {
+  color: #007bff;
+}
+
+.todo-task-completed {
+  text-decoration: line-through;
+  color: grey;
+}
