@@ -1,0 +1,98 @@
+/* Accordion container styling */
+.accordion-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Accordion item styles */
+  .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Accordion title (clickable area) styling */
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .accordion-title:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .accordion-title.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .accordion-title.active span {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Accordion content styles */
+  .accordion-content {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    transition: all 0.4s ease;
+  }
+  
+  /* Hover effect for accordion title */
+  .accordion-content p {
+    margin: 0;
+    animation: slideDown 0.4s ease forwards;
+  }
+  
+  /* Keyframes for slide-down animation */
+  @keyframes slideDown {
+    from {
+      max-height: 0;
+      opacity: 0;
+    }
+    to {
+      max-height: 500px;
+      opacity: 1;
+    }
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .accordion-container {
+      padding: 10px;
+      width: 100%;
+    }
+    
+    .accordion-title {
+      font-size: 1rem;
+    }
+    
+    .accordion-content {
+      font-size: 0.9rem;
+    }
+  }
+  
