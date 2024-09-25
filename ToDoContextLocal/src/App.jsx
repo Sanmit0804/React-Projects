@@ -18,7 +18,9 @@ function App() {
   };
 
   const deleteTodo = (id) => {
-    setTodos((prev) => prev.filter((todo) => todo !== id));
+    todos.splice(id,1);
+    setTodos(todos);
+    // setTodos((prev) => prev.filter((todo) => todo !== id));
   };
 
   const toggleComplete = (id) => {
