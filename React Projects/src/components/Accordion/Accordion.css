@@ -1,0 +1,71 @@
+/* Accordion.css */
+
+/* Main Container */
+.accordion-container {
+  max-width: 800px; /* Maximum width for the accordion */
+  margin: 20px auto; /* Centering the accordion */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Multi-Selector Button */
+.multi-selector {
+  background-color: #4b6cb7; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 20px; /* Spacing below button */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+.multi-selector:hover {
+  background-color: #3b5f8c; /* Darker shade on hover */
+}
+
+/* Accordion Styles */
+.accordion {
+  border-top: 2px solid #dcdcdc; /* Top border for separation */
+}
+
+/* Accordion Item */
+.accordion-item {
+  margin-bottom: 10px; /* Spacing between items */
+  border: 1px solid #dcdcdc; /* Border around each item */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Prevents overflow */
+  transition: all 0.3s; /* Smooth transitions */
+}
+
+/* Accordion Title */
+.accordion-title {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between title and icon */
+  align-items: center; /* Center items vertically */
+  background-color: #e7e7e7; /* Light grey background */
+  padding: 15px; /* Padding for clickable area */
+  cursor: pointer; /* Pointer cursor */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+/* Active State for Accordion Title */
+.accordion-title.active {
+  background-color: #4b6cb7; /* Active background color */
+  color: white; /* Active text color */
+}
+
+/* Accordion Content */
+.accordion-content {
+  padding: 15px; /* Padding for content */
+  background-color: #ffffff; /* White background for content */
+  border-top: 1px solid #dcdcdc; /* Top border for content separation */
+  transition: max-height 0.3s ease; /* Smooth height transition */
+}
+
+/* Hover Effect on Accordion Title */
+.accordion-title:hover {
+  background-color: #dcdcdc; /* Change background on hover */
+}

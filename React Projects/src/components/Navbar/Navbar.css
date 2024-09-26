@@ -1,0 +1,64 @@
+/* Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+  /* width: 100%; */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    #4b6cb7,
+    #182848
+  ); /* Gradient Background */
+  padding: 0 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Logo Styles */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Navbar Links Container */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Navbar Link Styles */
+.navbar-links a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide links for mobile view */
+  }
+
+  /* Add a menu icon for mobile view */
+  .navbar-menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+  }
+}

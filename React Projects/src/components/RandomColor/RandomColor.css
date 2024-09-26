@@ -1,0 +1,26 @@
+.randomColor{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.randomColor button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(234, 232, 232);
+    color: black;
+    cursor: pointer;
+    margin: 10px 50px;
+}
+
+.randomColor button:hover{
+    outline: 2px solid black;
+}
+
+.randomColor h2{
+    margin-top: 20px;
+}
