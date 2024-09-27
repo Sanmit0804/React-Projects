@@ -9,6 +9,7 @@ const Navbar = () => {
       <div className="navbar-links" >
         <Link to="/accordion">Accordion</Link>
         <Link to="/randomColor">Random Color</Link>
+        <Link to="/starRating">Star Rating</Link>
       </div>
     </nav>
   );
