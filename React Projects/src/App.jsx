@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Accordion from "./components/Accordion/Accordion";
 import RandomColor from "./components/RandomColor/RandomColor";
 import StarRating from "./components/StarRating/StarRating";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 
 const App = () => {
  return (
@@ -15,6 +16,7 @@ const App = () => {
          <Route path="/accordion" element={<Accordion />} />
          <Route path="/randomColor" element={<RandomColor />} />
          <Route path="/starRating" element={<StarRating />} />
+         <Route path="/imageSlider" element={<ImageSlider />} />
        </Routes>
      </main>
    </BrowserRouter>

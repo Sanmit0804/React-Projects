@@ -10,6 +10,7 @@ const Navbar = () => {
         <Link to="/accordion">Accordion</Link>
         <Link to="/randomColor">Random Color</Link>
         <Link to="/starRating">Star Rating</Link>
+        <Link to="/imageSlider">Image Slider</Link>
       </div>
     </nav>
   );
