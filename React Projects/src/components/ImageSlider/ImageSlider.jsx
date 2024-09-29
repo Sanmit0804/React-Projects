@@ -8,6 +8,7 @@ const ImageSlider = () => {
 
   const [images, setImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0); // State to track the current image index
+  const [isLoading, setIsLoading] = useState(true);
 
   // Fetch images from the API
   async function imageFetch(getUrl) {
@@ -17,6 +18,7 @@ const ImageSlider = () => {
 
       if (data) {
         setImages(data);
+        setIsLoading(false);
       }
     } catch (error) {
       console.log("Data not found!");
@@ -48,19 +50,22 @@ const ImageSlider = () => {
         <button className="back" onClick={backImage}>
           BACK
         </button>
-
-        <div className="image-view">
-          {images.length > 0 && (
-            <>
-              <img
-                src={images[currentIndex].download_url}
-                alt="Slider Image"
-                className="slider-image"
-              />
-              <p>Image ID: {images[currentIndex].id}</p>
-            </>
-          )}
-        </div>
+        {isLoading ? (
+          <div className="loading">Loading...</div>
+        ) : (
+            <div className="image-view">
+              {images.length > 0 && (
+                <>
+                  <img
+                    src={images[currentIndex].download_url}
+                    alt="Slider Image"
+                    className="slider-image"
+                  />
+                  <p>Image ID: {images[currentIndex].id}</p>
+                </>
+              )}
+            </div>
+        )}
 
         <button className="next" onClick={nextImage}>
           NEXT
