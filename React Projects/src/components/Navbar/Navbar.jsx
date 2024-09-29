@@ -11,6 +11,8 @@ const Navbar = () => {
         <Link to="/randomColor">Random Color</Link>
         <Link to="/starRating">Star Rating</Link>
         <Link to="/imageSlider">Image Slider</Link>
+        <Link to="/loadmore">Load More</Link>
+        <Link to="/password">Password</Link>
       </div>
     </nav>
   );

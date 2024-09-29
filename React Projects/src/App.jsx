@@ -6,21 +6,25 @@ import Accordion from "./components/Accordion/Accordion";
 import RandomColor from "./components/RandomColor/RandomColor";
 import StarRating from "./components/StarRating/StarRating";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
+import Password from "./components/Password/Password";
+import LoadMore from "./components/LoadMore/LoadMore.jsx";
 
 const App = () => {
- return (
-   <BrowserRouter>
-     <Navbar />
-     <main className="main-content">
-       <Routes>
-         <Route path="/accordion" element={<Accordion />} />
-         <Route path="/randomColor" element={<RandomColor />} />
-         <Route path="/starRating" element={<StarRating />} />
-         <Route path="/imageSlider" element={<ImageSlider />} />
-       </Routes>
-     </main>
-   </BrowserRouter>
- );
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <main className="main-content">
+        <Routes>
+          <Route path="/accordion" element={<Accordion />} />
+          <Route path="/randomColor" element={<RandomColor />} />
+          <Route path="/starRating" element={<StarRating />} />
+          <Route path="/imageSlider" element={<ImageSlider />} />
+          <Route path="/loadmore" element={<LoadMore />} />
+          <Route path="/password" element={<Password />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
+  );
 };
 
 export default App;
