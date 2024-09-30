@@ -13,6 +13,7 @@ const Navbar = () => {
         <Link to="/imageSlider">Image Slider</Link>
         <Link to="/loadmore">Load More</Link>
         <Link to="/password">Password</Link>
+        <Link to="/treeView">Tree View</Link>
       </div>
     </nav>
   );

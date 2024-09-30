@@ -1,0 +1,14 @@
+.treeView .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 500px;
+  width: 500px;
+}
+
+.treeView .two {
+  background-color: blue;
+  height: 250px;
+  width: 250px;
+}

@@ -8,6 +8,7 @@ import StarRating from "./components/StarRating/StarRating";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
 import Password from "./components/Password/Password";
 import LoadMore from "./components/LoadMore/LoadMore.jsx";
+import TreeView from "./components/TreeView/TreeView.jsx";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/imageSlider" element={<ImageSlider />} />
           <Route path="/loadmore" element={<LoadMore />} />
           <Route path="/password" element={<Password />} />
+          <Route path="/treeView" element={<TreeView />} />
         </Routes>
       </main>
     </BrowserRouter>
