@@ -1,11 +1,11 @@
 import React from 'react'
 
-const menuItem = () => {
+const MenuItem = ({item}) => {
   return (
-    <div>
-      
-    </div>
+    <li className='menu-item-container'>
+        <p>{item.label}</p>
+    </li>
   )
 }
 
-export default menuItem
+export default MenuItem

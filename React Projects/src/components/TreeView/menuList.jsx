@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import MenuItem from "./menuItem";
 
-const menuList = ({list = []}) => {
+const MenuList = ({ list = [] }) => {
   return (
-    <div className='menu-list-container'>
-      
-    </div>
-  )
-}
+    <ul className="menu-list-container">
+      {list && list.length
+        ? list.map((item,index) => <MenuItem key={index} item={item}></MenuItem>)
+        : null}
+    </ul>
+  );
+};
 
-export default menuList
+export default MenuList;
