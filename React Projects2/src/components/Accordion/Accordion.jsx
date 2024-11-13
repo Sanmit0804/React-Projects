@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Accordion.css";
 
 const Accordion = () => {
-  // Array of accordion items with title and content
   const accordionData = [
     { id: 1, title: "Accordion 1", detail: "This is detail for Accordion 1" },
     { id: 2, title: "Accordion 2", detail: "This is detail for Accordion 2" },
@@ -10,15 +9,13 @@ const Accordion = () => {
     { id: 4, title: "Accordion 4", detail: "This is detail for Accordion 4" },
   ];
 
-  // State to manage the visibility of each accordion's detail
-  const [visibleIndex, setVisibleIndex] = useState(null);
+  const [openSections, setOpenSections] = useState([]);
 
-  // Toggle visibility of the detail section
   const toggleDetail = (index) => {
-    if (visibleIndex === index) {
-      setVisibleIndex(null); // Close the clicked item if it's already open
+    if (openSections.includes(index)) {
+      setOpenSections(openSections.filter((i) => i !== index));
     } else {
-      setVisibleIndex(index); // Open the clicked item
+      setOpenSections([...openSections, index]);
     }
   };
 
@@ -29,7 +26,7 @@ const Accordion = () => {
           <div className="main" onClick={() => toggleDetail(index)}>
             {item.title}
           </div>
-          <div className={`detail ${visibleIndex === index ? "show" : ""}`}>
+          <div className={`detail ${openSections.includes(index) ? "show" : ""}`}>
             {item.detail}
           </div>
         </div>
