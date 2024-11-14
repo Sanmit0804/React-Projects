@@ -15,7 +15,7 @@ const Accordion = () => {
     if (openSections.includes(index)) {
       setOpenSections(openSections.filter((i) => i !== index));
     } else {
-      setOpenSections([...openSections, index]);
+      setOpenSections([...openSections, index]);   
     }
   };
 
