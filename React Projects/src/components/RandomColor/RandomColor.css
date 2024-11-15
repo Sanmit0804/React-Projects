@@ -1,0 +1,13 @@
+.randomColor-container{
+    margin: 10px;
+}
+
+.randomColor-container .generatedColor{
+    height: 50vh;
+    width: 100%;
+}
+
+.randomColor-container .generate-btn{
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
