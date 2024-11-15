@@ -1,89 +1,62 @@
 import React, { useState } from "react";
-import data from "./data.js";
 import "./Accordion.css";
+import data from "./data";
 
 const Accordion = () => {
   const [selected, setSelected] = useState(null);
-  const [multiSelected, setMultiSelected] = useState([]);
   const [enableMultiSelection, setEnableMultiSelection] = useState(false);
+  const [multiple, setMultiple] = useState([]);
 
-  // Single Selection Handler
   const handleSingleSelection = (getCurrentId) => {
-    if (selected === getCurrentId) {
-      setSelected(null); // Close if already open
-    } else {
-      setSelected(getCurrentId); // Open selected item
-    }
+    setSelected(getCurrentId == selected ? null : getCurrentId);
+    console.log(getCurrentId);
   };
 
-  // Multi-Selection Handler
   const handleMultiSelection = (getCurrentId) => {
-    let cpyMultiple = [...multiSelected];
-    const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
-
-    if (findIndexOfCurrentId === -1) {
-      cpyMultiple.push(getCurrentId); // Add to selection
+    if (multiple.includes(getCurrentId)) {
+      setMultiple(multiple.filter((id) => id !== getCurrentId));
     } else {
-      cpyMultiple.splice(findIndexOfCurrentId, 1); // Remove from selection
+      setMultiple([...multiple, getCurrentId]);
     }
-    setMultiSelected(cpyMultiple);
   };
 
   return (
-    <div className="accordion-container">
-      <button
-        className="multi-selector"
-        onClick={() => setEnableMultiSelection(!enableMultiSelection)}
-      >
-        {enableMultiSelection ? "Disable Multi Selection" : "Enable Multi Selection"}
-      </button>
-      <div className="accordion">
+    <>
+      <div className="accordion-container">
+        <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
+          {!enableMultiSelection
+            ? "Enable Multiple Selection"
+            : "Disable Multiple Selection"}
+        </button>
+        <h2>This is Accordion</h2>
         {data && data.length > 0 ? (
-          data.map((item) => (
-            <div className="accordion-item" key={item.id}>
+          data.map((item, index) => (
+            <div className="data" key={index}>
               <div
+                className="question"
                 onClick={
                   enableMultiSelection
-                    ? () => handleMultiSelection(item.id)
-                    : () => handleSingleSelection(item.id)
+                    ? () => handleMultiSelection(index)
+                    : () => handleSingleSelection(index)
                 }
-                className={`accordion-title ${
-                  enableMultiSelection
-                    ? multiSelected.includes(item.id)
-                      ? "active"
-                      : ""
-                    : selected === item.id
-                    ? "active"
-                    : ""
-                }`}
               >
-                <h3>{item.question}</h3>
-                <span>
-                  {enableMultiSelection
-                    ? multiSelected.includes(item.id)
-                      ? "-"
-                      : "+"
-                    : selected === item.id
-                    ? "-"
-                    : "+"}
-                </span>
+                {item.question}
               </div>
 
-              {/* Conditional rendering based on multi/single selection */}
-              {enableMultiSelection
-                ? multiSelected.includes(item.id) && (
-                    <div className="accordion-content">{item.answer}</div>
-                  )
-                : selected === item.id && (
-                    <div className="accordion-content">{item.answer}</div>
-                  )}
+              {enableMultiSelection ? (
+                multiple.includes(index) && (
+                  <div className="answer">{item.answer}</div>
+                )
+              ) : selected === index ? (
+                <div className="answer">{item.answer}</div>
+              ) : null}
             </div>
           ))
         ) : (
           <div>No data found!</div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 
