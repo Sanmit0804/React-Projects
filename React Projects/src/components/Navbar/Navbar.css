@@ -18,7 +18,7 @@
 }
 
 /* Navbar links styling */
-.navbar-links {
+.navbar .navbar-links {
   display: flex;
   gap: 1.5rem;
   list-style: none;

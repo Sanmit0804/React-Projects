@@ -30,6 +30,9 @@ const Navbar = () => {
         <li>
           <Link to="/imageslider">Image Slider</Link>
         </li>
+        <li>
+          <Link to="/treeview">Tree View</Link>
+        </li>
       </ul>
     </nav>
   );
