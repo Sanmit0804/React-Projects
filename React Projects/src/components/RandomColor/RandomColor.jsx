@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import './RandomColor.css';
+import React, { useState } from "react";
+import "./RandomColor.css";
 
 const RandomColor = () => {
-  const [color, setColor] = useState('red');
+  const [color, setColor] = useState("red");
 
   // Function to generate a random color
   const generateRandomColor = () => {
@@ -18,9 +18,7 @@ const RandomColor = () => {
       <button className="generate-btn" onClick={generateRandomColor}>
         Generate
       </button>
-      <div className="generatedColor" style={{ backgroundColor: color }}>
-
-      </div>
+      <div className="generatedColor" style={{ backgroundColor: color }}></div>
     </div>
   );
 };

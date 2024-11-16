@@ -1,0 +1,40 @@
+.image-slider-container{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-slider-container .image{
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.image-slider-container .btn{
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.image-slider-container .btn:active{
+    background-color: rgb(207, 207, 207);
+}
+
+.image-slider-container .image-dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.image-slider-container .active-dot{
+    background-color: grey;
+}
+

@@ -16,13 +16,19 @@ const Navbar = () => {
       </div>
       <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/accordion">Accordion</Link>
         </li>
         <li>
           <Link to="/randomcolor">Random Color</Link>
+        </li>
+        <li>
+          <Link to="/starrating">Star Rating</Link>
+        </li>
+        <li>
+          <Link to="/imageslider">Image Slider</Link>
         </li>
       </ul>
     </nav>
