@@ -22,7 +22,7 @@ const Accordion = () => {
 
   return (
     <>
-      <div className="accordion-container">
+      <div className="accordion-container container">
         <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
           {!enableMultiSelection
             ? "Enable Multiple Selection"

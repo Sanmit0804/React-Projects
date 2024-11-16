@@ -9,6 +9,9 @@ import RandomColor from "./components/RandomColor/RandomColor";
 import StarRating from "./components/StarRating/StarRating";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
 import TreeView from "./components/TreeView/TreeView";
+import QRGenerator from "./components/QRGenerator/QRGenerator";
+import ThemeChanger from "./components/ThemeChanger/ThemeChanger";
+import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/starrating" element={<StarRating />} />
           <Route path="/imageslider" element={<ImageSlider />} />
           <Route path="/treeview" element={<TreeView menus={menus}  />} />
+          <Route path="/qr" element={<QRGenerator />} />
+          <Route path="/theme" element={<ThemeChanger />} />
+          <Route path="/scroll" element={<ScrollIndicator/>}/>
         </Routes>
       </BrowserRouter>
     </>

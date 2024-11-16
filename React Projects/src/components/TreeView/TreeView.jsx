@@ -4,7 +4,7 @@ import MenuList from './MenuList';
 
 const TreeView = ({menus = []}) => {
   return (
-    <div className='treeview-container'>
+    <div className='treeview-container container'>
                 <MenuList list={menus}/>  
     </div>
   )

@@ -22,7 +22,7 @@ const ImageSlider = () => {
 
   return (
     <>
-      <div className="image-slider-container">
+      <div className="image-slider-container container">
         <div className="back-btn btn" onClick={handleBack}>
           Back
         </div>

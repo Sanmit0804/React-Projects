@@ -10,7 +10,7 @@ const StarRating = () => {
   };
 
   return (
-    <div className="star-container">
+    <div className="star-container container">
       {stars.map((star, index) => (
         <div className="star" key={index} onMouseEnter={() => handleSelect(index)} style={{backgroundColor: index <= selected ? "yellow" : ""}}/>
       ))}

@@ -6,7 +6,9 @@
   padding: 1rem 2rem;
   background-color: #333;
   color: #fff;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 /* Logo styling */

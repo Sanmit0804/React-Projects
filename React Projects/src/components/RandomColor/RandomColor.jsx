@@ -13,7 +13,7 @@ const RandomColor = () => {
   };
 
   return (
-    <div className="randomColor-container">
+    <div className="randomColor-container container">
       <h2>Random Color Generator</h2>
       <button className="generate-btn" onClick={generateRandomColor}>
         Generate

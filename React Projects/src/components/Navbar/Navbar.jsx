@@ -33,6 +33,15 @@ const Navbar = () => {
         <li>
           <Link to="/treeview">Tree View</Link>
         </li>
+        <li>
+          <Link to="/qr">QR Generator</Link>
+        </li>
+        <li>
+          <Link to="/theme">Theme Changer</Link>
+        </li>
+        <li>
+          <Link to="/scroll">Scroll Indicator</Link>
+        </li>
       </ul>
     </nav>
   );
