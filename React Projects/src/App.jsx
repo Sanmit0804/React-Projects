@@ -12,6 +12,7 @@ import TreeView from "./components/TreeView/TreeView";
 import QRGenerator from "./components/QRGenerator/QRGenerator";
 import ThemeChanger from "./components/ThemeChanger/ThemeChanger";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
+import Tabs from "./components/Tabs/Tabs";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/qr" element={<QRGenerator />} />
           <Route path="/theme" element={<ThemeChanger />} />
           <Route path="/scroll" element={<ScrollIndicator url={`https://dummyjson.com/products?limit=100`}/>}/>
+          <Route path="/tabs" element={<Tabs/>}/>
         </Routes>
       </BrowserRouter>
     </>

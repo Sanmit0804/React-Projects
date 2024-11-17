@@ -42,6 +42,9 @@ const Navbar = () => {
         <li>
           <Link to="/scroll">Scroll Indicator</Link>
         </li>
+        <li>
+          <Link to="/tabs">Tabs</Link>
+        </li>
       </ul>
     </nav>
   );

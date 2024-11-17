@@ -1,0 +1,66 @@
+/* Container for the tabs */
+.tab-container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the tab buttons */
+  .tab-container .tab1,
+  .tab-container .tab2,
+  .tab-container .tab3 {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 150px; /* Make the buttons uniform in size */
+  }
+  
+  /* Hover effect for buttons */
+  .tab-container .tab1:hover,
+  .tab-container .tab2:hover,
+  .tab-container .tab3:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Active button styling */
+  .tab-container .tab1.active,
+  .tab-container .tab2.active,
+  .tab-container .tab3.active {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+    font-weight: bold;
+  }
+  
+  /* Content section at the bottom */
+  .tab-container .content {
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    display: none; /* Hidden by default */
+  }
+  
+  .tab-container .content.active {
+    display: block; /* Visible when active */
+  }
+  
+  .tab-container .buttons{
+    display: flex;
+    margin-bottom: 50px;
+  }
