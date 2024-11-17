@@ -27,7 +27,7 @@ function App() {
           <Route path="/treeview" element={<TreeView menus={menus}  />} />
           <Route path="/qr" element={<QRGenerator />} />
           <Route path="/theme" element={<ThemeChanger />} />
-          <Route path="/scroll" element={<ScrollIndicator/>}/>
+          <Route path="/scroll" element={<ScrollIndicator url={`https://dummyjson.com/products?limit=100`}/>}/>
         </Routes>
       </BrowserRouter>
     </>
