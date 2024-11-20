@@ -45,6 +45,12 @@ const Navbar = () => {
         <li>
           <Link to="/tabs">Tabs</Link>
         </li>
+        <li>
+          <Link to="/popup">Pop-up</Link>
+        </li>
+        <li>
+          <Link to="/github">Github</Link>
+        </li>
       </ul>
     </nav>
   );

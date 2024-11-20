@@ -13,6 +13,8 @@ import QRGenerator from "./components/QRGenerator/QRGenerator";
 import ThemeChanger from "./components/ThemeChanger/ThemeChanger";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import Tabs from "./components/Tabs/Tabs";
+import Popup from "./components/Popup/Popup";
+import Github from "./components/Github/Github";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/theme" element={<ThemeChanger />} />
           <Route path="/scroll" element={<ScrollIndicator url={`https://dummyjson.com/products?limit=100`}/>}/>
           <Route path="/tabs" element={<Tabs/>}/>
+          <Route path="/popup" element={<Popup/>}/>
+          <Route path="/github" element={<Github/>}/>
         </Routes>
       </BrowserRouter>
     </>
