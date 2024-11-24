@@ -15,6 +15,7 @@ import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import Tabs from "./components/Tabs/Tabs";
 import Popup from "./components/Popup/Popup";
 import Github from "./components/Github/Github";
+import SearchAutoComplete from "./components/SearchAutoComplete/SearchAutoComplete";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/tabs" element={<Tabs/>}/>
           <Route path="/popup" element={<Popup/>}/>
           <Route path="/github" element={<Github/>}/>
+          <Route path="/searchAutoComplete" element={<SearchAutoComplete/>}/>
         </Routes>
       </BrowserRouter>
     </>

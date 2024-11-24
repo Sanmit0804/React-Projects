@@ -51,6 +51,9 @@ const Navbar = () => {
         <li>
           <Link to="/github">Github</Link>
         </li>
+        <li>
+          <Link to="/searchAutoComplete">Search</Link>
+        </li>
       </ul>
     </nav>
   );
