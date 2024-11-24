@@ -7,19 +7,20 @@ const SearchAutoComplete = () => {
   const [error, setError] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false);
   const [users, setUsers] = useState([]);
-  const [filteredUsers, setFilteredUsers] = useState([])
-
+  const [filteredUsers, setFilteredUsers] = useState([]);
 
   function handleChange(event) {
     const query = event.target.value.toLowerCase();
-    setSearchParam(query)
-    if(query>1)
-    {
-        const filteredData = users && users.length ? users.filter((item)=> item.toLowerCase().indexOf(query) > -1) : [];
-        setFilteredUsers(filteredData)
-        showDropdown(true);
-    }else{
-        showDropdown(false);
+    setSearchParam(query);
+    if (query.length > 1) {
+      const filteredData =
+        users && users.length
+          ? users.filter((item) => item.toLowerCase().indexOf(query) > -1)
+          : [];
+      setFilteredUsers(filteredData);
+      setShowDropdown(true);
+    } else {
+      setShowDropdown(false);
     }
   }
 
@@ -29,7 +30,7 @@ const SearchAutoComplete = () => {
       const response = await fetch(`https://dummyjson.com/users`);
       const data = await response.json();
 
-      console.log("This is data", data);
+    //   console.log("This is data", data);
       if (data && data.users && data.users.length) {
         setUsers(data.users.map((userItem) => userItem.firstName));
         setLoading(false);
@@ -47,12 +48,16 @@ const SearchAutoComplete = () => {
   }, []);
 
   console.log("this is users", users);
-  console.log("this is Filtered users",filteredUsers);
+  console.log("this is Filtered users", filteredUsers);
 
   return (
     <div className="search-container container">
-      <input type="text" value={searchParam} onChange={(e) => setSearchParam(e)} placeholder="Search users here..." />
-
+      <input
+        type="text"
+        value={searchParam}
+        onChange={handleChange}
+        placeholder="Search users here..."
+      />
     </div>
   );
 };
