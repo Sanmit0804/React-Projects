@@ -39,7 +39,7 @@ const Github = () => {
     };
 
     return (
-        <div className="github-profile-container container">
+        <div className="container  github-profile-container ">
             <h1 className="header">GitHub Profile Finder</h1>
             <div className="search-bar">
                 <input 
