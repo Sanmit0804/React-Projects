@@ -30,7 +30,6 @@ const SearchAutoComplete = () => {
       const response = await fetch(`https://dummyjson.com/users`);
       const data = await response.json();
 
-    //   console.log("This is data", data);
       if (data && data.users && data.users.length) {
         setUsers(data.users.map((userItem) => userItem.firstName));
         setLoading(false);
