@@ -27,6 +27,7 @@ const SearchAutoComplete = () => {
   const fetchListOfUsers = async () => {
     try {
       setLoading(true);
+      // fetching data using fetch 
       const response = await fetch(`https://dummyjson.com/users`);
       const data = await response.json();
 
