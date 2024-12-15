@@ -17,6 +17,7 @@ import Popup from "./components/Popup/Popup";
 import Github from "./components/Github/Github";
 import SearchAutoComplete from "./components/SearchAutoComplete/SearchAutoComplete";
 import Todo from "./components/Todo/Todo";
+import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/github" element={<Github/>}/>
           <Route path="/searchAutoComplete" element={<SearchAutoComplete/>}/>
           <Route path="/todo" element={<Todo/>}/>
+          <Route path="/password" element={<PasswordGenerator/>}/>
         </Routes>
       </BrowserRouter>
     </>
