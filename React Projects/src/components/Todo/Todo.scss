@@ -42,6 +42,11 @@
   
     .output {
       margin-top: 1.5rem;
+
+      .buttons{
+        display: flex;
+        gap: 2px;
+      }
   
       .todo {
         display: flex;

@@ -80,10 +80,12 @@ const Todo = () => {
           >
             <p>{index + 1}</p>
             <p>{todo}</p>
+            <div className="buttons">
             <button onClick={() => handleEdit(index)}>Edit</button>
             <button onClick={() => handleDelete(index)}>Delete</button>
             <button onClick={() => indexUp(index)}>↑</button>
             <button onClick={() => indexDown(index)}>↓</button>
+            </div>
           </div>
         ))}
       </div>
