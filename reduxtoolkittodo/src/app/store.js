@@ -3,6 +3,6 @@ import { todoSlice } from '../features/todo/todoSlice';
 
 export const store = configureStore({
     reducer: {
-        todo: todoSlice.reducer, // Connect the todo reducer
+        todo: todoSlice.reducer, 
     },
 });
