@@ -10,8 +10,8 @@ function App() {
     <>
       <h1>Learn about redux toolkit</h1>
       <h2>count: {counter}</h2>
-      <button onClick={() => dispatch(increment())}>Increment</button>
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
+      <button onClick={() => dispatch(increment())}>Increment + </button>
+      <button onClick={() => dispatch(decrement())}>Decrement - </button>
     </>
   );
 }
