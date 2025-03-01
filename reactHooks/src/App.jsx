@@ -15,7 +15,7 @@ function App() {
         {/* <Navbar />
         <Home /> */}
         {/* <UseTransitionHook/> */}
-        <UseDeferredValueHook/>
+        {/* <UseDeferredValueHook/> */}
       </div>
     </>
   )
