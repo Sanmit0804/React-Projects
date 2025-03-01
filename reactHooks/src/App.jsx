@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar'
 import Home from './components/Home';
 import UseTransitionHook from './components/UseTransitionHook';
 import { UseDeferredValueHook } from './components/UseDeferredValue';
+import UseSyncExternalStoreExample from './components/UseSyncExternalStore';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
         <Home /> */}
         {/* <UseTransitionHook/> */}
         {/* <UseDeferredValueHook/> */}
+        <UseSyncExternalStoreExample/>
       </div>
     </>
   )
