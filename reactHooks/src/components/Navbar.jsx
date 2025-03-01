@@ -1,63 +1,47 @@
 import React, { useState } from 'react'
 import {
-  CButton,
-  CCollapse,
-  CContainer,
-  CDropdown,
-  CDropdownDivider,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-  CForm,
-  CFormInput,
-  CNavbar,
-  CNavbarBrand,
-  CNavbarNav,
-  CNavbarToggler,
-  CNavItem,
-  CNavLink,
+    CCollapse,
+    CContainer,
+    CNavbar,
+    CNavbarBrand,
+    CNavbarNav,
+    CNavbarToggler,
+    CNavItem,
+    CNavLink,
 } from '@coreui/react'
 
 export const Navbar = () => {
-  const [visible, setVisible] = useState(false)
-  return (
-    <CNavbar expand="lg" className="bg-body-tertiary">
-      <CContainer fluid>
-        <CNavbarBrand href="#">Sanmit Suthar</CNavbarBrand>
-        <CNavbarToggler onClick={() => setVisible(!visible)} />
-        <CCollapse className="navbar-collapse" visible={visible}>
-          <CNavbarNav className="me-auto">
-            <CNavItem>
-              <CNavLink href="#" active>
-                Home
-              </CNavLink>
-            </CNavItem>
-            <CNavItem>
-              <CNavLink href="#">Link</CNavLink>
-            </CNavItem>
-            <CDropdown variant="nav-item" popper={false}>
-              <CDropdownToggle color="secondary">Dropdown button</CDropdownToggle>
-              <CDropdownMenu>
-                <CDropdownItem href="#">Action</CDropdownItem>
-                <CDropdownItem href="#">Another action</CDropdownItem>
-                <CDropdownDivider />
-                <CDropdownItem href="#">Something else here</CDropdownItem>
-              </CDropdownMenu>
-            </CDropdown>
-            <CNavItem>
-              <CNavLink href="#" disabled>
-                Disabled
-              </CNavLink>
-            </CNavItem>
-          </CNavbarNav>
-          <CForm className="d-flex">
-            <CFormInput type="search" className="me-2" placeholder="Search" />
-            <CButton type="submit" color="success" variant="outline">
-              Search
-            </CButton>
-          </CForm>
-        </CCollapse>
-      </CContainer>
-    </CNavbar>
-  )
+    const [visible, setVisible] = useState(false)
+    return (
+        <CNavbar expand="lg" className="bg-body-tertiary">
+            <CContainer fluid>
+                <CNavbarBrand href="#">Sanmit Suthar</CNavbarBrand>
+                <CNavbarToggler onClick={() => setVisible(!visible)} />
+                <CCollapse className="navbar-collapse" visible={visible}>
+                    <CNavbarNav className="me-auto">
+                        <CNavItem>
+                            <CNavLink href="#" active>
+                                Home
+                            </CNavLink>
+                        </CNavItem>
+                        <CNavItem>
+                            <CNavLink href="#">Profile</CNavLink>
+                        </CNavItem>
+                        <CNavItem>
+                            <CNavLink href="#">Education</CNavLink>
+                        </CNavItem>
+                        <CNavItem>
+                            <CNavLink href="#">Projects</CNavLink>
+                        </CNavItem>
+                        <CNavItem>
+                            <CNavLink href="#">Resume</CNavLink>
+                        </CNavItem>
+                        <CNavItem>
+                            <CNavLink href="#">Contact me</CNavLink>
+                        </CNavItem>
+                    </CNavbarNav>
+                </CCollapse>
+            </CContainer>
+        </CNavbar>
+    )
 }
