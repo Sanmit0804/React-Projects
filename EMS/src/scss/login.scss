@@ -1,0 +1,10 @@
+.login-form {
+    form {
+        input {
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba(173, 179, 187, 0.25) !important;
+                border: none;
+            }
+        }
+    }
+}
