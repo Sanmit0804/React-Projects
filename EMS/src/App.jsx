@@ -7,7 +7,6 @@ import { AuthContext } from "./context/AuthProvider"
 function App() {
   const [user, setUser] = useState(null);
   const authData = useContext(AuthContext);
-  console.log("authData--", authData?.employees);
 
   const handleLogin = (email, password) => {
     if (email == 'admin@example.com' && password == '123') {

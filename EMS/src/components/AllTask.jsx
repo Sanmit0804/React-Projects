@@ -6,9 +6,7 @@ const AllTask = () => {
       <div className="rounded p-3 shadow mb-3">
         <div className="header-text pt-3 fs-5">Make a YouTube video</div>
         <div className="footer-text text-muted">
-          nesciunt repellendus blanditiis rerum reiciendis, at rem magni, omnis non. Explicabo harum maiores quod
-          delectus neque ipsa atque dolorem cupiditate possimus? Laboriosam numquam eos culpa, commodi similique
-          delectus!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum aperiam eum, hic dicta quo voluptates consequatur natus repellendus aliquam id. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus aut ex deserunt distinctio veritatis, saepe doloribus velit nesciunt consequuntur fugiat.
         </div>
       </div>
     </div>
