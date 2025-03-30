@@ -4,7 +4,9 @@ import useDeviceType from './hooks/useDeviceType';
 import UserList from './components/UserList';
 import Pagination from './utils/Pagination';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import DropdownQue from './components/DropdownQue';
+import DropdownQue from './components/interviewQue/DropdownQue';
+import RadioQue from './components/interviewQue/RadioQue';
+import CheckBoxQue from './components/interviewQue/CheckBoxQue';
 
 const queryClient = new QueryClient();
 
@@ -17,7 +19,9 @@ function App() {
       <QueryClientProvider client={queryClient}>
         {/* <UserList /> */}
         {/* <Pagination/> */}
-        <DropdownQue />
+        {/* <DropdownQue /> */}
+        {/* <RadioQue /> */}
+        <CheckBoxQue/>
       </QueryClientProvider>
     </div>
   );
