@@ -27,13 +27,11 @@ const AutocompleteSearch = () => {
                 <div className="card-body">
                     <input type="text" className="form-control mb-3" value={input} onChange={(e) => setInput(e.target.value)} placeholder="Search here..." />
 
-                    {input &&
-                        <ul>
-                            {filteredData && filteredData.map((item, index) => {
-                                return <li key={index}>{item}</li>
-                            })}
-                        </ul>
-                    }
+                    <ul>
+                        {filteredData && filteredData.map((item, index) => {
+                            return <li key={index}>{item}</li>
+                        })}
+                    </ul>
                 </div>
             </div>
         </div>
