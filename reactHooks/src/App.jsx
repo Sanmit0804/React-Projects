@@ -8,14 +8,13 @@ import Pagination from './utils/Pagination';
 const queryClient = new QueryClient(); 
 
 function App() {
-  const value = useDeviceType();
-  console.log(value);
+  // const value = useDeviceType();
 
   return (
     <div className="App">
       {/* <AutocompleteSearch /> */}
       <QueryClientProvider client={queryClient}>
-        <UserList />
+        {/* <UserList /> */}
         <Pagination/>
       </QueryClientProvider>
     </div>
