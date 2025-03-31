@@ -21,7 +21,7 @@ function App() {
         {/* <Pagination/> */}
         {/* <DropdownQue /> */}
         {/* <RadioQue /> */}
-        <CheckBoxQue/>
+        {/* <CheckBoxQue/> */}
       </QueryClientProvider>
     </div>
   );
